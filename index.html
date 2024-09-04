@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Blog preview card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      *,
+      *::before,
+      *::after {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @font-face {
+        font-family: "Figtree";
+        src: url("./assets/fonts/Figtree-VariableFont_wght.ttf")
+          format("truetype");
+        font-weight: 100 800;
+        font-style: normal;
+      }
+
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        background-color: hsl(47, 88%, 63%);
+        font-family: "Figtree";
+      }
+
+      .card {
+        background-color: #fff;
+        width: 300px;
+        border-radius: 20px;
+        padding: 1rem;
+        box-shadow: 8px 8px 0 0 rgb(0, 0, 0);
+      }
+
+      .card__img img {
+        width: 100%;
+        border-radius: 10px;
+        margin-bottom: 16px;
+      }
+
+      .card__subject {
+        background: hsl(47, 88%, 63%);
+        display: inline-block;
+        padding: 5px 10px;
+        margin-bottom: 8px;
+      }
+
+      .card__content-heading {
+        font-size: 20px;
+        margin: 16px 0;
+      }
+
+      .card__content-text {
+        margin: 16px 0;
+      }
+
+      .card__author-info {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      .card__author-image {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+      }
+
+      .card__author-image img {
+        width: 100%;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:active {
+        color: hsl(47, 88%, 63%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card__img">
+        <img
+          src="./assets/images/illustration-article.svg"
+          alt="Article preview image"
+        />
+      </div>
+      <p class="card__subject">Learning</p>
+      <p class="card__meta-data">Published 21 Dec 2023</p>
+      <div class="card__content">
+        <a href="#"
+          ><h1 class="card__content-heading">HTML & CSS Foundations</h1>
+        </a>
+        <p class="card__content-text">
+          These languages are the backbone of every website, defining structure,
+          content, and presentation.
+        </p>
+      </div>
+      <div class="card__author-info">
+        <div class="card__author-image">
+          <img src="./assets/images/image-avatar.webp" alt="Auhor" />
+        </div>
+        <p class="card__author-name">Greg Hooper</p>
+      </div>
+    </div>
+  </body>
+</html>
